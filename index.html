@@ -1,233 +1,715 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sanjana Soma | Software Developer</title>
-    <!-- Google tag (gtag.js) -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5N2HRPSN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Sanjana Soma — React Developer with 2+ years experience building scalable web applications. Improved load speeds by 25% and built systems handling 90M+ records." />
+  <meta name="keywords" content="React Developer, Frontend Developer, JavaScript, Redux, Web Development" />
+  <meta name="author" content="Sanjana Soma" />
 
-  gtag('config', 'G-GY5N2HRPSN');
-</script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <!-- Open Graph (helps when sharing on LinkedIn) -->
+  <meta property="og:title" content="Sanjana Soma | React Developer" />
+  <meta property="og:description" content="React Developer building scalable, performance-optimized web applications." />
+  <meta property="og:type" content="website" />
+
+  <title>Sanjana Soma | React Developer</title>
+
+  <!-- Fonts (Inter + JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+
+  
+    <!-- Optional: Google Analytics
+    1) Replace G-XXXXXXXXXX with your Measurement ID
+    2) Uncomment the script blocks -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GY5N2HRPSN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GY5N2HRPSN');
+    </script>
+ 
 </head>
-<body>
-    <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="#home" class="nav-logo">Sanjana Soma</a>
-            <ul class="nav-menu">
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
 
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Navigation -->
+  <nav id="navbar" aria-label="Primary">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Sanjana Soma</a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-controls="nav-panel"
+        aria-expanded="false"
+      >
+        <i class="fas fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <div class="nav-panel" id="nav-panel">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#impact" class="nav-link">Impact</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <!--
+            IMPORTANT:
+            Put your resume PDF here: assets/Sanjana_Soma_Resume.pdf
+            (create an assets folder and upload the PDF)
+          -->
+          <a
+            href="assets/Sanjana_Soma_Resume.pdf"
+            class="btn-resume"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+            Resume
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile menu backdrop -->
+    <div class="nav-backdrop" data-nav-close aria-hidden="true"></div>
+  </nav>
+
+  <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero">
+      <div class="hero-container">
         <div class="hero-content">
-            <img src="images/profile.jpg" alt="Sanjana Soma" class="profile-img">
-            <h1>Hello, I'm <span class="highlight">Sanjana</span></h1>
-            <p class="tagline">Software Developer | Building Scalable Web Applications</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#projects" class="btn btn-secondary">View Projects</a>
+          <h1 class="hero-name">Sanjana Soma</h1>
+          <p class="hero-title">Software Developer • Scalable UI Systems • Performance Optimization</p>
+          <p class="hero-description">
+            I build high-performance React applications with optimized state management and scalable architecture.
+            Improved load times by <strong>25%</strong> and developed dashboards processing <strong>90M+ records</strong>.
+          </p>
+
+          <div class="hero-stats" aria-label="Key highlights">
+            <div class="stat">
+              <span class="stat-number" data-count="1" data-suffix="+">1+</span>
+              <span class="stat-label">Years Experience</span>
             </div>
-            <div class="social-links">
-                <a href="mailto:sanjana.s.soma@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-                <a href="https://linkedin.com/in/soma-sanjana" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/SanjanaSoma11" target="_blank"><i class="fab fa-github"></i></a>
+            <div class="stat">
+              <span class="stat-number" data-count="25" data-suffix="%">25%</span>
+              <span class="stat-label">Load Speed Improved</span>
             </div>
+            <div class="stat">
+              <span class="stat-number" data-count="90" data-suffix="M+">90M+</span>
+              <span class="stat-label">Records Handled</span>
+            </div>
+          </div>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              Get In Touch
+            </a>
+            <a href="#projects" class="btn btn-secondary">
+              <i class="fas fa-code" aria-hidden="true"></i>
+              View Projects
+            </a>
+            <a
+              href="assets/Sanjana_Soma_Resume.pdf"
+              class="btn btn-ghost"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-file-lines" aria-hidden="true"></i>
+              Resume
+            </a>
+          </div>
+
+          <div class="social-links" aria-label="Social links">
+            <a href="mailto:sanjana.s.soma@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a href="https://linkedin.com/in/soma-sanjana" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/SanjanaSoma11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
+
+        <div class="hero-image">
+          <div class="profile-card">
+            <img
+              src="images/profile.jpg"
+              alt="Sanjana Soma"
+              class="profile-img"
+              width="380"
+              height="380"
+              decoding="async"
+            />
+            <!-- <div class="profile-badge">
+              <i class="fas fa-check-circle" aria-hidden="true"></i>
+              Available for Opportunities
+            </div> -->
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Impact Highlights -->
+    <section id="impact" class="section section--surface">
+      <div class="container">
+        <h2 class="section-title">Impact Highlights</h2>
+        <p class="section-subtitle">Quantifiable results from real-world projects</p>
+
+        <div class="impact-grid">
+          <div class="impact-card reveal">
+            <div class="impact-icon"><i class="fas fa-bolt" aria-hidden="true"></i></div>
+            <div class="impact-number">+25%</div>
+            <div class="impact-label">Site Load Speed Improvement</div>
+            <p class="impact-desc">Optimized React components and JavaScript implementation</p>
+          </div>
+
+          <div class="impact-card reveal">
+            <div class="impact-icon"><i class="fas fa-bug" aria-hidden="true"></i></div>
+            <div class="impact-number">30+</div>
+            <div class="impact-label">Issues Resolved Monthly</div>
+            <p class="impact-desc">Enhanced UI responsiveness and reliability</p>
+          </div>
+
+          <div class="impact-card reveal">
+            <div class="impact-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
+            <div class="impact-number">90M+</div>
+            <div class="impact-label">Records Processed</div>
+            <p class="impact-desc">Built scalable data platform UIs</p>
+          </div>
+
+          <div class="impact-card reveal">
+            <div class="impact-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+            <div class="impact-number">-18%</div>
+            <div class="impact-label">Query Latency Reduction</div>
+            <p class="impact-desc">Optimized SQL queries and pipeline performance</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
     <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="about-text">
-                I'm a Software Developer with hands-on experience building scalable, partner-facing web applications. 
-                Currently pursuing my MS in Computer Science at Arizona State University, I specialize in ReactJS, 
-                Redux, and modern JavaScript (ES6+). My professional experience includes reducing site load speeds 
-                by 25% and resolving 30+ integration issues monthly at Vibho Technologies.
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+          <div class="about-text">
+            <p class="lead">
+              I'm a React Developer specializing in building scalable, partner-facing web applications with a focus on
+              performance optimization and clean architecture.
             </p>
-            <p class="about-text">
-                I'm passionate about creating high-performance, user-centric interfaces and have a strong foundation 
-                in full-stack development, data pipelines, and machine learning research.
+            <p>
+              Currently pursuing my <strong>MS in Computer Science at Arizona State University</strong> (GPA: 4.0/4.0), I bring
+              1+ years of professional experience from Vibho Technologies and Mindgraph Technologies, where I've contributed
+              to systems handling millions of records and serving enterprise partners.
             </p>
-        </div>
-    </section>
+            <p>
+              My expertise lies in <strong>ReactJS, Redux, modern JavaScript (ES6+)</strong>, and building reusable component
+              libraries. I'm passionate about creating intuitive user interfaces that not only look great but perform
+              exceptionally at scale.
+            </p>
 
-    <!-- Education Section -->
-    <section id="education" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-card">
-                <h3>Arizona State University</h3>
-                <p class="degree">MS in Computer Science</p>
-                <p class="date">Aug 2024 – May 2026 (Expected)</p>
-                <p class="gpa">GPA: 4.0/4.0</p>
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+                <span>MS Computer Science — ASU (4.0 GPA)</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                <span>1+ Years Professional Experience</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                <span>Tempe, Arizona</span>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">ReactJS</span>
-                        <span class="skill-tag">Redux</span>
-                        <span class="skill-tag">JavaScript (ES6+)</span>
-                        <span class="skill-tag">HTML5</span>
-                        <span class="skill-tag">CSS3</span>
-                        <span class="skill-tag">React Hooks</span>
-                        <span class="skill-tag">React Router</span>
-                    </div>
+          <div class="skills-overview reveal" aria-label="Core technologies proficiency">
+            <h3>Core Technologies</h3>
+            <div class="skill-bars">
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>React.js & Redux</span>
+                  <span>Expert</span>
                 </div>
-                <div class="skill-category">
-                    <h3>Backend & Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">NodeJS</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Unix/Linux</span>
-                    </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-progress="95"></div>
                 </div>
-                <div class="skill-category">
-                    <h3>Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">SQL</span>
-                    </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>JavaScript (ES6+)</span>
+                  <span>Advanced</span>
                 </div>
-                <div class="skill-category">
-                    <h3>Data & ML</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">PySpark</span>
-                        <span class="skill-tag">Plotly</span>
-                    </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-progress="90"></div>
                 </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>HTML5 & CSS3</span>
+                  <span>Expert</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-progress="93"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Node.js & REST APIs</span>
+                  <span>Proficient</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-progress="85"></div>
+                </div>
+              </div>
+
+              <div class="skill-bar">
+                <div class="skill-info">
+                  <span>Python & Data Tools</span>
+                  <span>Proficient</span>
+                </div>
+                <div class="skill-progress">
+                  <div class="skill-fill" data-progress="80"></div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3> Software Developer</h3>
-                    <span class="date">Jun 2023 – Jul 2024</span>
+    <!-- Skills -->
+    <section id="skills" class="section section--surface">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-category reveal">
+            <div class="category-icon"><i class="fab fa-react" aria-hidden="true"></i></div>
+            <h3>Frontend Development</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">ReactJS</span>
+              <span class="skill-tag">Redux</span>
+              <span class="skill-tag">React Hooks</span>
+              <span class="skill-tag">React Router</span>
+              <span class="skill-tag">JavaScript (ES6+)</span>
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="category-icon"><i class="fas fa-server" aria-hidden="true"></i></div>
+            <h3>Backend & APIs</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">Django</span>
+              <span class="skill-tag">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="category-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
+            <h3>Programming Languages</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">C++</span>
+              <span class="skill-tag">Java</span>
+              <span class="skill-tag">C</span>
+            </div>
+          </div>
+
+          <div class="skill-category reveal">
+            <div class="category-icon"><i class="fas fa-screwdriver-wrench" aria-hidden="true"></i></div>
+            <h3>Tools & Technologies</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git/GitHub</span>
+              <span class="skill-tag">Unix/Linux</span>
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">PySpark</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3>React Developer</h3>
+                  <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Vibho Technologies — Hyderabad, India</p>
                 </div>
-                <p class="company">Vibho Technologies — Hyderabad, India</p>
-                <ul class="exp-list">
-                    <li>Built and maintained multi-page React applications using React Hooks, Redux, and React Router</li>
-                    <li>Improved site load speed by <strong>25%</strong> through optimized ReactJS and JavaScript implementations</li>
-                    <li>Resolved over <strong>30 integration issues monthly</strong>, enhancing UI responsiveness</li>
-                    <li>Designed reusable components and RESTful APIs, reducing development redundancy by <strong>20%</strong></li>
+                <span class="date">Jun 2023 – Jul 2024</span>
+              </div>
+
+              <p class="exp-summary">
+                Built multi-page React applications using Redux and React Router to streamline partner workflows and improve
+                user experience across enterprise platforms.
+              </p>
+
+              <ul class="exp-list">
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Improved site load speed by <strong>25%</strong> through component optimization, code splitting, and efficient state management</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Resolved <strong>30+ integration and performance issues monthly</strong>, enhancing UI responsiveness and reliability for partner-facing interfaces</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Built reusable component library reducing development redundancy by <strong>20%</strong>, accelerating feature delivery across teams</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Collaborated with backend engineers to integrate RESTful APIs, ensuring seamless data flow and real-time updates</li>
+              </ul>
+
+              <div class="tech-stack" aria-label="Technology stack">
+                <span class="tech-badge">React.js</span>
+                <span class="tech-badge">Redux</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">REST APIs</span>
+                <span class="tech-badge">Git</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3>Software Engineer</h3>
+                  <p class="company"><i class="fas fa-building" aria-hidden="true"></i> Mindgraph Technologies — Hyderabad, India</p>
+                </div>
+                <span class="date">Jan 2023 – Jun 2023</span>
+              </div>
+
+              <p class="exp-summary">
+                Developed data ingestion modules and scalable UIs for a Customer Data Platform serving enterprise telecom
+                clients.
+              </p>
+
+              <ul class="exp-list">
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Built scalable UI components handling <strong>90M+ records</strong>, enabling advanced analytics for enterprise partners</li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Optimized SQL queries and pipeline performance, reducing query latency by <strong>18%</strong></li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Developed end-to-end data ingestion workflows that increased customer engagement by <strong>20%</strong></li>
+                <li><i class="fas fa-check-circle" aria-hidden="true"></i> Enhanced partner-driven insights through centralized data processing and real-time analytics dashboards</li>
+              </ul>
+
+              <div class="tech-stack" aria-label="Technology stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">SQL</span>
+                <span class="tech-badge">Data Pipelines</span>
+                <span class="tech-badge">React</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section--surface">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Research and development work showcasing technical depth</p>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-brain" aria-hidden="true"></i></div>
+              <div class="project-meta">
+                <h3>Long Context Benchmark</h3>
+                <p class="project-org"><i class="fas fa-university" aria-hidden="true"></i> Arizona State University</p>
+                <p class="project-date">Jan 2025 – May 2025</p>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-block"><strong>Problem:</strong> Existing LLM benchmarks did not adequately test long-context reasoning across multi-thousand-word documents.</p>
+
+              <div class="project-block">
+                <strong>What I Built:</strong>
+                <ul>
+                  <li>Evaluation framework comparing GPT-4, LLaMA-3.1, and Perplexity AI</li>
+                  <li>Custom dataset with complex narrative reasoning tasks</li>
+                  <li>Automated evaluation pipeline with loss analysis</li>
                 </ul>
-            </div>
+              </div>
 
-            <div class="experience-card">
-                <div class="exp-header">
-                    <h3>Software Engineer</h3>
-                    <span class="date">Jan 2023 – Jun 2023</span>
-                </div>
-                <p class="company">Mindgraph Technologies — Hyderabad, India</p>
-                <ul class="exp-list">
-                    <li>Developed data ingestion modules and scalable UIs for a Customer Data Platform handling <strong>90M+ records</strong></li>
-                    <li>Optimized SQL queries, reducing latency by <strong>18%</strong></li>
+              <div class="project-block">
+                <strong>Impact:</strong>
+                <ul>
+                  <li>Identified performance degradation patterns across different model architectures</li>
+                  <li>Built reproducible evaluation pipeline improving accuracy assessment</li>
+                  <li>Aligned evaluation schema with industry standards</li>
                 </ul>
+              </div>
             </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">LLMs</span>
+                <span class="tag">AI Research</span>
+                <span class="tag">Data Analysis</span>
+              </div>
+              <!-- <div class="project-links">
+                <a href="https://github.com/SanjanaSoma11" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github" aria-hidden="true"></i> View Code
+                </a>
+              </div> -->
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
+              <div class="project-meta">
+                <h3>Customer Data Platform</h3>
+                <p class="project-org"><i class="fas fa-building" aria-hidden="true"></i> Mindgraph Technologies</p>
+                <p class="project-date">Jan 2023 – Jun 2023</p>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-block"><strong>Problem:</strong> Telecom clients needed a unified platform to integrate multi-source customer data and derive actionable insights.</p>
+
+              <div class="project-block">
+                <strong>What I Built:</strong>
+                <ul>
+                  <li>End-to-end data platform integrating multiple data sources</li>
+                  <li>Scalable UI components for analytics dashboards</li>
+                  <li>Real-time data processing pipelines</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <strong>Impact:</strong>
+                <ul>
+                  <li>Increased customer engagement by <strong>20%</strong></li>
+                  <li>Processed <strong>90M+ records</strong> with optimized performance</li>
+                  <li>Enabled centralized analytics for enterprise partners</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Data Pipelines</span>
+                <span class="tag">React</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-header">
+              <div class="project-icon"><i class="fas fa-image" aria-hidden="true"></i></div>
+              <div class="project-meta">
+                <h3>Neural Network Image Classification</h3>
+                <p class="project-org"><i class="fas fa-university" aria-hidden="true"></i> University of Florida</p>
+                <p class="project-date">Jun 2022 – Jul 2022</p>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <p class="project-block"><strong>Problem:</strong> Required an efficient image classification system with high accuracy for pattern recognition tasks.</p>
+
+              <div class="project-block">
+                <strong>What I Built:</strong>
+                <ul>
+                  <li>Multi-layer neural network using TensorFlow</li>
+                  <li>Training pipeline for 2,500+ images</li>
+                  <li>Experiment tracking for reproducibility</li>
+                </ul>
+              </div>
+
+              <div class="project-block">
+                <strong>Impact:</strong>
+                <ul>
+                  <li>Achieved high classification accuracy on test dataset</li>
+                  <li>Improved workflow tracking for experiment reproducibility</li>
+                  <li>Built foundation for advanced computer vision work</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-footer">
+              <div class="project-tags">
+                <span class="tag">TensorFlow</span>
+                <span class="tag">Python</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Computer Vision</span>
+              </div>
+              <!-- <div class="project-links">
+                <a href="https://github.com/SanjanaSoma11" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <i class="fab fa-github" aria-hidden="true"></i> View Code
+                </a>
+              </div> -->
+            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Research & Projects</h2>
-            
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Long Context Benchmark</h3>
-                    <p class="project-meta">Arizona State University | Jan 2025 – May 2025</p>
-                    <p>Engineered a framework to evaluate long-context reasoning in LLMs (GPT-4, LLaMA-3.1) across multi-thousand-word datasets.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">LLMs</span>
-                        <span class="tag">AI</span>
-                    </div>
-                </div>
+    <!-- Looking For -->
+    <!-- <section id="looking-for" class="section section--gradient">
+      <div class="container">
+        <div class="looking-for-content reveal">
+          <h2>What I'm Looking For</h2>
+          <p class="lead">Available for full-time opportunities starting May 2026</p>
 
-                <div class="project-card">
-                    <h3>Customer Data Platform</h3>
-                    <p class="project-meta">Mindgraph Technologies | Jan 2023 – Jun 2023</p>
-                    <p>Built end-to-end platform integrating multi-source data pipelines, increasing customer engagement by <strong>20%</strong>.</p>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Data Pipelines</span>
-                        <span class="tag">SQL</span>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Neural Network Image Classification</h3>
-                    <p class="project-meta">University of Florida | Jun 2022 – Jul 2022</p>
-                    <p>Implemented multi-layer neural network for image classification on 2,500 images using TensorFlow.</p>
-                    <div class="project-tags">
-                        <span class="tag">TensorFlow</span>
-                        <span class="tag">Python</span>
-                        <span class="tag">ML</span>
-                    </div>
-                </div>
+          <div class="looking-for-grid">
+            <div class="looking-item">
+              <i class="fas fa-laptop-code" aria-hidden="true"></i>
+              <h4>Frontend / React Developer Roles</h4>
+              <p>Building scalable UI systems with modern frameworks</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-text">I'm currently available for full-time opportunities starting May 2026. Let's connect!</p>
-            <div class="contact-info">
-                <a href="mailto:sanjana.s.soma@gmail.com" class="contact-btn">
-                    <i class="fas fa-envelope"></i> Email Me
-                </a>
-                <a href="https://linkedin.com/in/soma-sanjana" target="_blank" class="contact-btn">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://github.com/SanjanaSoma11" target="_blank" class="contact-btn">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
+            <div class="looking-item">
+              <i class="fas fa-layer-group" aria-hidden="true"></i>
+              <h4>Full-Stack Roles with UI Focus</h4>
+              <p>End-to-end development with emphasis on user experience</p>
             </div>
+            <div class="looking-item">
+              <i class="fas fa-rocket" aria-hidden="true"></i>
+              <h4>Teams Building at Scale</h4>
+              <p>Working on products serving millions of users</p>
+            </div>
+          </div>
+
+          <div class="visa-note">
+            <i class="fas fa-info-circle" aria-hidden="true"></i>
+            Seeking positions that offer H1-B visa sponsorship
+          </div>
         </div>
+      </div>
+    </section> -->
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">I'm always open to discussing new opportunities and collaborations</p>
+
+        <div class="contact-grid">
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+            <h4>Email</h4>
+            <a href="mailto:sanjana.s.soma@gmail.com">sanjana.s.soma@gmail.com</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-linkedin" aria-hidden="true"></i></div>
+            <h4>LinkedIn</h4>
+            <a href="https://linkedin.com/in/soma-sanjana" target="_blank" rel="noopener noreferrer">linkedin.com/in/soma-sanjana</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fab fa-github" aria-hidden="true"></i></div>
+            <h4>GitHub</h4>
+            <a href="https://github.com/SanjanaSoma11" target="_blank" rel="noopener noreferrer">github.com/SanjanaSoma11</a>
+          </div>
+
+          <div class="contact-card reveal">
+            <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+            <h4>Phone</h4>
+            <a href="tel:+14807435104">+1 (480) 743-5104</a>
+          </div>
+        </div>
+
+        <div class="cta-section reveal">
+          <h3>Ready to collaborate?</h3>
+          <div class="cta-buttons">
+            <a href="mailto:sanjana.s.soma@gmail.com" class="btn btn-primary btn-lg">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
+              Send Me an Email
+            </a>
+            <a
+              href="assets/Sanjana_Soma_Resume.pdf"
+              class="btn btn-secondary btn-lg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fas fa-file-arrow-down" aria-hidden="true"></i>
+              View Resume
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Sanjana Soma. All rights reserved.</p>
-    </footer>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-left">
+        <h3>Sanjana Soma</h3>
+        <p>Software Developer passionate about building exceptional user experiences</p>
+      </div>
 
-    <script src="script.js"></script>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="mailto:sanjana.s.soma@gmail.com">Email</a></li>
+            <li><a href="https://linkedin.com/in/soma-sanjana" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/SanjanaSoma11" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span class="current-year"></span> Sanjana Soma. All rights reserved.</p>
+      <p class="privacy-notice">This site may use analytics in the future to understand visitor behavior. No personal information is collected.</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-top" class="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
